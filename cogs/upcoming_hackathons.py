@@ -18,7 +18,7 @@ class UpcomingHackathons(commands.Cog):
         await ctx.send('This could take a little while, please allow up to a minute.')
         options = webdriver.ChromeOptions()
         options.headless = True
-        driver = webdriver.Chrome('chromedriver.exe', options=options)
+        driver = webdriver.Chrome('chromedriver', options=options)
         driver.get('https://devpost.com/hackathons?order_by=deadline&status[]=upcoming')
         soup = BeautifulSoup(driver.page_source)
         driver.close()
