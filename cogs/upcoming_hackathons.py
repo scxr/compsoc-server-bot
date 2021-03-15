@@ -42,6 +42,7 @@ class UpcomingHackathons(commands.Cog):
             embed.add_field(name="Prize Pool", value=hackathon[3], inline=False)
             embed.add_field(name="Submission Date", value=hackathon[2], inline=True)
             embeds_for_paging.append(embed)
+            embed.set_footer(text="View my source here : https://github.com/scxr/compsoc-server-bot")
         print(embeds_for_paging)
         mypaginator = paginator.AutoEmbedPaginator(ctx)
         

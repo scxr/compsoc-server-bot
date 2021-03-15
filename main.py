@@ -5,7 +5,8 @@ bot = commands.Bot(command_prefix='!')
 
 cogs_to_load = [
     'cogs.hello_world',
-    'cogs.upcoming_hackathons'
+    'cogs.upcoming_hackathons',
+    'cogs.help_cog'
 ]
 
 
