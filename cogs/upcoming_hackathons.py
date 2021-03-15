@@ -5,6 +5,7 @@ import paginator
 from bs4 import BeautifulSoup
 from datetime import datetime
 from selenium import webdriver
+import os
 class UpcomingHackathons(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
